@@ -8,7 +8,7 @@ it('Checking  That User land on the the onboarding page', ()=>{
     cy.contains('begin').should('be.visible')
 })
 
-it('Answer First And Second onboarding questions & Check that user Got the Lets Start Screen After that ', ()=>{
+it('Answer First And Second onboarding question & Check that user Got the Lets Start Screen After that ', ()=>{
   cy.contains('Question 1').should('be.visible')  
   cy.get('.undefined > .px-10 > :nth-child(2)').click()
     cy.contains('Question 2').should('be.visible')
